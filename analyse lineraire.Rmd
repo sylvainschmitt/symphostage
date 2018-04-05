@@ -341,16 +341,16 @@ lm(formula = LT_mean ~ Competition + curvature + Area_exclude +
 ```
 the multiplicative form does not show any interesting interaction between variable and have a smaller adjusted R-squared : 0.2582 against 0.267
 ### step backward
-```{r}
+```{r, eval=F}
 step(object = LT_mean_model, direction = "backward")
 
-lm(formula = LT_mean ~ wetness + diameter + dem + TypeTopoEN + 
-    Dawkins + Chloro_content, data = data_standar2) %>% summary()
+lm(formula = LT_mean ~ wetness + diameter + dem + TypeTopoEN +
+Dawkins + Chloro_content, data = data_standar2) %>% summary()
 ```
 
 ### step forward
 
-```{r}
+```{r, eval=F}
 step(object = LT_mean_model, direction = "forward")
 
 lm(formula = LT_mean ~ wetness + Competition + d_creek + aspect + 
@@ -401,7 +401,7 @@ Multiplicative form give almost the same adjusted R-squared but there are just a
 
 
 ### step backward
-```{r}
+```{r, eval=F}
 step(object = Chloro_content_model, direction = "backward")
 
 lm(formula = Chloro_content ~ Competition + aspect + diameter + 
@@ -411,7 +411,7 @@ Same result as both direction
 
 ### step forward
 
-```{r}
+```{r, eval=F}
 step(object = Chloro_content_model, direction = "forward")
 
 lm(formula = Chloro_content ~ wetness + Competition + d_creek + 

@@ -1,3 +1,7 @@
+# Sylvain 5 avril 2018
+* info update
+* eval=F for unknittable chunks (! issue)
+
 # Sylvain 3 avril 2018
 * `path` correction in G_neighbour.Rmd
 * `data.sh` update

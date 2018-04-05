@@ -13,8 +13,8 @@ library("tidyverse")
 library("pingr")
 library("spatstat")
 library("devtools")
-path <- "C:\\Users\\emduc\\Desktop\\Drive\\symphostage\\"
-# path <- "./data/" # To be used on sylvain local machine
+# path <- "C:\\Users\\emduc\\Desktop\\Drive\\symphostage\\"
+path <- "./data/" # To be used on sylvain local machine
 ```
 
 
@@ -62,7 +62,7 @@ if (!any(is.na(pingr::ping_port("sql.ecofog.gf", port=1433)))) {
                                unitname=c("metre", "metres"))) -> Paracou6
 } else {
   # Données dans le package Spatdiv
-  devtools::install_github("EricMarcon/SpatDiv")
+  # devtools::install_github("EricMarcon/SpatDiv")
   library("SpatDiv")
 }
 ```
@@ -198,7 +198,7 @@ P_Gneighbour <- P_Gneighbour %>%
 
 # data bind 
 
-```{r}
+```{r, eval=F}
 #load(file = "C:\\Users\\emduc\\Desktop\\Drive\\symphostage\\G_neighbour_data\\G_neighbour16.RData") 
 
 Full_Gneighbour <- rbind(G_neighbour1,G_neighbour10, G_neighbour2, G_neighbour3, G_neighbour4, G_neighbour5, G_neighbour6,G_neighbour7, G_neighbour8, G_neighbour9, G_neighbour11, G_neighbour12, G_neighbour13, G_neighbour14, G_neighbour15, G_neighbour16)
