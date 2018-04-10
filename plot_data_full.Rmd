@@ -37,7 +37,7 @@ Trait_mean_individuals_num <- Traits_brut_data %>%
 
 And here for non numeric information like Dawkins and morphotype
 
-```{r }
+```{r}
 Traits_brut_data <- Traits_brut_data %>% 
   rename(wood_presence = Bois) %>% 
   mutate(wood_presence = as.factor(wood_presence))

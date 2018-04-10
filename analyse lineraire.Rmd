@@ -22,8 +22,8 @@ library(MASS)
 library(ellipse)
 library(smatr)
 
-path <- "C:\\Users\\emduc\\Desktop\\Drive\\symphostage\\"
-# path <- "./data/" # To be used on sylvain local machine
+# path <- "C:\\Users\\emduc\\Desktop\\Drive\\symphostage\\"
+path <- "./data/" # To be used on sylvain local machine
 ```
 
 # data
@@ -340,6 +340,7 @@ lm(formula = LT_mean ~ Competition + curvature + Area_exclude +
  #     Dawkins * Area_exclude* Competition , data = data_standar2) %>%  summary()
 ```
 the multiplicative form does not show any interesting interaction between variable and have a smaller adjusted R-squared : 0.2582 against 0.267
+
 ### step backward
 ```{r, eval=F}
 step(object = LT_mean_model, direction = "backward")
@@ -363,7 +364,9 @@ Once again forward method does not work well and result from both method is the 
 
 
 ## chloro content
+
 using data standar with SLA value because chlorocontent is not correlated or a component of SLA
+
 ### normality test 
 
 ```{r normality chloro}

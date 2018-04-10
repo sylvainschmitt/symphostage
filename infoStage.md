@@ -20,7 +20,7 @@
 
 *Certain Skype meeting can be canceled afterward.*
 
-**Skype meeting are around 10h30 in Kourou and 14h30 in Bordeaux.**
+**Skype meeting are around 9h30 in Kourou and 14h30 in Bordeaux.**
 
 ## April
 
